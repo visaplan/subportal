@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.zope.org/plone"
+    i18n_domain="visaplan.subportal">
+
+    <include package="plone.behavior" file="meta.zcml" />
+
+    <plone:behavior
+        title="Subportal support"
+        description="Fields and methods for support of Unitracc's subportals"
+        provides=".behaviors.ISubportalSupport"
+        marker=".behaviors.ISubportalSupport"
+        factory=".behaviors.SubportalSupport"
+        />
+
+</configure>
